@@ -1,0 +1,125 @@
+* {
+    margin:0px;
+    padding:0px;
+}
+
+:root {
+    --header-color: #FFFFFF;
+    --menu-color: #2D2D2D;
+    --mainBackground-color: #F8F9FA;
+    --butttons-color: #004B8D;
+    --footer-color: #1A1A1A;
+    --shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* menu css */
+
+.menu-container {
+    background-color: var(--menu-color);
+    display: flex;
+    justify-content: center;
+}
+.menu {
+    display: flex;
+    width: 70%;
+    padding:30px;
+    align-items: center;
+}
+
+.menu-logo-container {
+    display: flex;
+}
+.menu-logo {
+    font-size: 2.5rem;
+    color:#fff;
+    margin-right: 300px;
+}
+
+.page-links-container {
+    display: flex;
+}
+.page-links {
+    display: flex;
+    gap: 11px;
+    font-size: 1.2rem;
+    margin-right:170px;
+}
+.page-links a {
+    color:#fff;
+    text-decoration: none;
+}
+.page-links a:hover {
+    color: var(--butttons-color)
+}
+
+.setup-links-container {
+    display: flex;
+}
+.setup-links {
+    font-size: 1.2rem;
+}
+.setup-links a {
+    color:#fff;
+    padding:5px;
+    text-decoration: none;
+    border: 1px solid var(--butttons-color);
+    border-radius: 9px;
+    background-color: var(--butttons-color);
+    transition: all 0.3s ease;
+}
+.setup-links a:hover {
+    border: 1px solid #fff;
+    background-color: #fff;
+    box-shadow:var(--shadow);
+    color: var(--butttons-color)
+}
+
+/*header*/
+
+.header-container {
+    display: flex;
+    background-image:url("../images-folder/darya-tryfanava-UCNaGWn4EfU-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+.header-container::before {
+    content: "";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2) 10%, rgba(0,0,0,0.3) 100%);
+    z-index: -1;
+}
+.header {
+    height: 75vh;
+    display: flex;
+    align-items: center;
+}
+
+.wellcome-container {
+    display: flex;
+    flex-direction: column;
+}
+.wellcome {
+    font-weight: 700;
+    font-size: clamp(48px, 2vw, 56px);
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px #000000;
+    padding-left:200px ;
+    color: #fff;
+}
+.subheader {
+    padding-left:200px;
+    font-weight: 300;
+    color:rgba(255,255,255,0.9);
+    font-size: clamp(18px, 2vw, 22px);
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+
