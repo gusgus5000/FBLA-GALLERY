@@ -40,13 +40,14 @@
 }
 .page-links {
     display: flex;
-    gap: 11px;
+    gap: 10px;
     font-size: 1.2rem;
     margin-right:170px;
 }
 .page-links a {
     color:#fff;
     text-decoration: none;
+    transition:all 0.3s ease;
 }
 .page-links a:hover {
     color: var(--butttons-color)
@@ -112,6 +113,7 @@
     text-shadow: 2px 2px 4px #000000;
     padding-left:200px ;
     color: #fff;
+    animation: slideInFromLeft 1s ease-out;
 }
 .subheader {
     padding-left:200px;
@@ -119,7 +121,24 @@
     color:rgba(255,255,255,0.9);
     font-size: clamp(18px, 2vw, 22px);
     text-shadow: 2px 2px 4px #000000;
-
+    animation: slideInFromLeft 1s ease-out;
 }
+
+
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-150);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+
 
 
