@@ -1,5 +1,15 @@
 {
     "editor.inlineSuggest.edits.showLongDistanceHint": false,
     "editor.inlineSuggest.experimental.emptyResponseInformation": false,
-    "editor.inlineSuggest.enabled": false
+    "editor.inlineSuggest.enabled": false,
+    "css.validate": false,
+    "tailwindCSS.includeLanguages": {
+        "html": "html"
+    },
+    "editor.quickSuggestions": {
+        "strings": true
+    },
+    "files.associations": {
+        "*.css": "tailwindcss"
+    }
 }

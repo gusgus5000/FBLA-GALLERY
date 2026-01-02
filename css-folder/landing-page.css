@@ -1,7 +1,5 @@
-* {
-    margin:0px;
-    padding:0px;
-}
+@import "tailwindcss";
+
 
 :root {
     --header-color: #FFFFFF;
@@ -118,7 +116,7 @@
     text-shadow: 2px 2px 4px #000000;
     padding-left:200px ;
     color: #fff;
-    animation: slideInFromLeft 1s ease-out;
+    animation: fadeIn 2s ease-out;
 }
 .subheader {
     padding-left:200px;
@@ -126,7 +124,7 @@
     color:rgba(255,255,255,0.9);
     font-size: clamp(18px, 2vw, 22px);
     text-shadow: 2px 2px 4px #000000;
-    animation: slideInFromLeft 1s ease-out;
+    animation: fadeIn 2s ease-out;
 }
 
 
@@ -197,7 +195,7 @@
     margin:25px;
     display: flex;
     width: 350px;
-    height: 400px;
+    height: 430px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -253,12 +251,18 @@
 font-size: 1.1em;
 line-height: 1.4;
 }
+.right-collum h3 {
+    font-size: 1.5rem;
+}
 .our-misson-right-collum {
     margin-bottom: 15px;
 }
 .left-collum li {
     line-height: 1.4;
     font-size: 1.1em;
+}
+.left-collum h3 {
+    font-size: 1.5rem;
 }
 
 /**/
@@ -286,7 +290,7 @@ line-height: 1.4;
 }
 .card {
     width: 350px;
-    height: fit-content;
+    height: 395px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -299,4 +303,43 @@ line-height: 1.4;
     padding-top:5px;
 }
 
+/* Custom Tailwind theme */
+@theme {
+    --color-header: #2D2D2D;
+    --color-buttons: #004B8D;
+    --color-grayAlt: #dcdcdccb;
+    --animate-slide-in-from-left: slideInFromLeft 1s ease-out;
+    --animate-fade-in: fadeIn 2s ease-out
 
+}
+
+@layer components {
+    .mls {
+        padding-right:10px
+    }
+    .hero-img {
+    display: flex;
+    background-image:url("../images-folder/darya-tryfanava-UCNaGWn4EfU-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    }
+    .hero-img::before {
+    content: "";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2) 10%, rgba(0,0,0,0.3) 100%);
+    z-index: -1;
+    }
+}
+
+@layer base {
+    h1 {
+        font-size: 2.5rem;
+    }
+}

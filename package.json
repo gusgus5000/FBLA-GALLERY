@@ -1,0 +1,26 @@
+{
+  "name": "fbla-gallery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @tailwindcss/cli -i ./css-folder/landing-page.css -o ./css-folder/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gusgus5000/FBLA-GALLERY.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gusgus5000/FBLA-GALLERY/issues"
+  },
+  "homepage": "https://github.com/gusgus5000/FBLA-GALLERY#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
+  }
+}
