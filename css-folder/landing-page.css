@@ -44,7 +44,6 @@
 .page-links {
     display: flex;
     gap: 10px;
-    font-size: 1.2rem;
     margin-right:170px;
 }
 .page-links a {
@@ -59,9 +58,7 @@
 .setup-links-container {
     display: flex;
 }
-.setup-links {
-    font-size: 1.2rem;
-}
+
 .setup-links a {
     color:#fff;
     padding:5px;
@@ -306,6 +303,9 @@ line-height: 1.4;
 /* Custom Tailwind theme */
 @theme {
     --color-header: #2D2D2D;
+    --color-footer: #2D2D2D;
+    --color-footer-main-text: #f8fafc;
+    --color-footer-secondary-text: #94a3b8;
     --color-buttons: #004B8D;
     --color-grayAlt: #dcdcdccb;
     --animate-slide-in-from-left: slideInFromLeft 1s ease-out;
@@ -335,6 +335,15 @@ line-height: 1.4;
     bottom:0;
     background: linear-gradient(to bottom, rgba(0,0,0,0.2) 10%, rgba(0,0,0,0.3) 100%);
     z-index: -1;
+    }
+    .card-tw {
+        @apply bg-white rounded-lg w-87.5 h-107.5  p-2.5 flex justify-center items-center flex-col;
+    }
+    .img-tw {
+        @apply w-82.5 h-62.5 object-cover rounded-lg;
+    }
+    .footer-card-tw {
+        @apply flex  flex-col items-center py-6.25
     }
 }
 
