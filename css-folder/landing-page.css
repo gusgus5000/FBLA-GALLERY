@@ -176,7 +176,7 @@
     transform: translateY(-20px);
     transition: opacity 1s ease-out, transform 1s ease-out;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #dcdcdccb;
 
 }
@@ -268,7 +268,9 @@ line-height: 1.4;
 
 .featured-artists {
     background-color: #dcdcdccb;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .featured-artists h2 {
     font-size: 2.5em;
@@ -282,19 +284,21 @@ line-height: 1.4;
     padding-bottom: 5px;
 }
 .grid-artist {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .card {
     width: 350px;
-    height: 395px;
+    height: auto;
+    min-height: 395px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #fff;
     border-radius: 8px;
     padding: 10px;
-    margin:25px;
+    margin: 25px 75px;
 }
 .artist-bio {
     padding-top:5px;

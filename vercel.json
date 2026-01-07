@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/html-folder/landing-page.html" },
+    { "source": "/landing-page.html", "destination": "/html-folder/landing-page.html" },
+    { "source": "/exhibitions.html", "destination": "/html-folder/exhibitions.html" },
+    { "source": "/artists.html", "destination": "/html-folder/artists.html" },
+    { "source": "/visit-us.html", "destination": "/html-folder/visit-us.html" }
+  ]
+}
