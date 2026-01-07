@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Landing page</title>
+        <title>SLC Art Gallery</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io (1)/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io (1)/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io (1)/favicon-16x16.png">
+        <link rel="manifest" href="../favicon_io (1)/site.webmanifest">
         <link rel="stylesheet" href="../css-folder/output.css">
     </head>
     
@@ -24,15 +29,6 @@
                     </div>
                 </div>
 
-                <!--- wait to see if needed
-
-                <div class="setup-links-container">
-                    <div class="setup-links">
-                        <a href="login.html">Buy Tickets</a>
-                    </div>
-                </div>
-
-                -->
 
 
             </div>
@@ -105,14 +101,14 @@
 
                 <div class="two-collums">
                     <div class="right-collum">
-                        <h3>Our misson</h3>
+                        <h3>Our Mission</h3>
                         <p class="our-misson-right-collum">We believe art has the power to inspire, challenge, and unite
                             communities. Through carefully curated exhibitions and educational
                             programs, SLC Art connects artists with audiences and fosters a
                             deeper appreciation for contemporary visual culture.
                         </p>
 
-                        <h3>Visit Us</h3>                        
+                        <h3>Visit Us</h3>
                         <p>Whether you're an art enthusiast or just curious, everyone is
                             welcome at SLC Art. Explore our current exhibitions, attend an
                             artist talk, or simply enjoy the creative atmosphere.
@@ -168,19 +164,63 @@
                     </p>
                 </div>
 
-                <!--do more if need
-
-                <div class="card">
-                    <img class="card-imgs" alt="Marcus Thompson" src=""/>
-                    <h3>Marcus Thompson</h3>
-                    <p class="artist-bio"></p>
-                </div>
-
-                --->
 
             </div>
 
         </div>
+
+        <!--start of footer-->
+        <div class="bg-footer flex justify-center flex-col">
+            <h1 class="text-footer-main-text text-center">SLC Art</h1>
+            <p class="text-footer-main-text text-center">Showcasing contemporary art from local and regional artists in the heart of Salt Lake City.</p>
+            <div class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+
+                <div class="footer-card-tw">
+                    <h2 class="text-[1.25rem] text-footer-main-text font-semibold">Useful Links</h2>
+                    <ul class="text-footer-main-text pt-1.5 text-[15px]">
+                        <li><a href="landing-page.html">Home</a></li>
+                        <li><a href="exhibitions.html">Exhibitions</a></li>
+                        <li><a href="artists.html">Artists</a></li>
+                        <li><a href="visit-us.html">Visit Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-card-tw">
+                    <h2 class="text-[1.25rem] text-footer-main-text font-semibold">Location</h2>
+                    <ul class="text-footer-main-text py-1.5 text-[15px]">
+                        <li>1452 S West Temple St</li>
+                        <li>Salt Lake City, UT 84115</li>
+                        <li class="pt-2"><h2 class="text-[1.25rem] text-footer-main-text font-semibold">Contact</h2></li>
+                        <li>info@slcart.org</li>
+                    </ul>
+                </div>
+
+                <div class="footer-card-tw">
+                    <h2 class="text-[1.25rem] text-footer-main-text font-semibold">Hours</h2>
+                    <ul class="text-footer-main-text py-1.5 text-[15px]">
+                        <li>Tue - Fri: 10am - 6pm</li>
+                        <li>Sat: 10am - 8pm</li>
+                        <li>Sun: 12pm - 5pm</li>
+                        <li>Mon: Closed</li>
+                    </ul>
+                </div>
+
+                <div class="footer-card-tw">
+                    <h2 class="text-[1.25rem] text-footer-main-text font-semibold">Follow Us</h2>
+                    <ul class="text-footer-main-text py-1.5 text-[15px]">
+                        <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="hover:text-buttons">Instagram</a></li>
+                        <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="hover:text-buttons">Facebook</a></li>
+                        <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="hover:text-buttons">Twitter</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="text-footer-main-text text-center text-[13px] py-4 border-t border-white/20 mt-4">
+                <p>&copy; 2026 SLC Art Gallery. All rights reserved.</p>
+                <p class="pt-1">Sources: <a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer" class="hover:text-buttons underline">Tailwind CSS</a> | <a href="https://pexels.com" target="_blank" rel="noopener noreferrer" class="hover:text-buttons underline">Pexels</a> | <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer" class="hover:text-buttons underline">Unsplash</a></p>
+            </div>
+        </div>
+        <!--end of footer-->
 
         <script src="../js-folder/landing-page.js"></script>
     </body>

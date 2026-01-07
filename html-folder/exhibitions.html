@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io (1)/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io (1)/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io (1)/favicon-16x16.png">
+    <link rel="manifest" href="../favicon_io (1)/site.webmanifest">
     <link rel="stylesheet" href="../css-folder/output.css">
     <title>Exhibitions</title>
 </head>
@@ -10,39 +14,41 @@
 
     <!--header/menu-->
     <div class="bg-header z-50 flex justify-center top-0 sticky">
-        <div class="text-white w-[70%] flex items-center py-7.5">
+        <div class="text-white w-[95%] md:w-[70%] flex flex-wrap items-center justify-between md:justify-start py-4 md:py-7.5">
 
-            <a href="../html-folder/landing-page.html"><h1 class="mr-75">SLC Art</h1></a>
+            <a href="landing-page.html"><h1 class="mr-4 md:mr-75 text-xl md:text-[2.5rem]">SLC Art</h1></a>
 
-            <a class="mls hover:text-buttons" href="../html-folder/landing-page.html">Home</a>
-            <a class="mls hover:text-buttons" href="../html-folder/exhibitions.html">Exhibitions</a>
-            <a class="mls hover:text-buttons" href="../html-folder/artists.html">Artists</a>
-            <a class="hover:text-buttons" href="../html-folder/visit-us.html">Visit Us</a>
+            <div class="flex flex-wrap gap-2 md:gap-0">
+                <a class="text-sm md:text-base mls hover:text-buttons" href="landing-page.html">Home</a>
+                <a class="text-sm md:text-base mls hover:text-buttons" href="exhibitions.html">Exhibitions</a>
+                <a class="text-sm md:text-base mls hover:text-buttons" href="artists.html">Artists</a>
+                <a class="text-sm md:text-base hover:text-buttons" href="visit-us.html">Visit Us</a>
+            </div>
 
         </div>
     </div>
     <!--end of header/menu-->
 
     <!--start of hero section-->
-    <div class=" hero-img hero-img::before flex justify-start">
-        <div class="flex justify-center flex-col text-white h-174 ">
-            <h1 class="text-shadow-[2px_2px_4px_black] pl-50 animate-fade-in text-[48px] font-bold">Exhibitions</h1>
-            <p class="text-shadow-[2px_2px_4px_black] pl-50 text-xl animate-fade-in text-[22px] font-light text-white/90">Explore our current and upcoming exhibitions featuring contemporary art from local and regional artists.</p>
+    <div class="hero-img hero-img::before flex justify-start">
+        <div class="flex justify-center flex-col text-white h-[50vh] md:h-174 px-4 md:px-0">
+            <h1 class="text-shadow-[2px_2px_4px_black] pl-4 md:pl-50 animate-fade-in text-[32px] md:text-[48px] font-bold">Exhibitions</h1>
+            <p class="text-shadow-[2px_2px_4px_black] pl-4 md:pl-50 text-lg md:text-xl animate-fade-in md:text-[22px] font-light text-white/90">Explore our current and upcoming exhibitions featuring contemporary art from local and regional artists.</p>
         </div>
     </div>
     <!--end of hero section-->
 
     <!--start of CURRENT EXHIBITIONS-->
     <div class="bg-[#ffffff] flex justify-center">
-        <div class="w-[70%] flex items-center flex-col">
-            <h1>Current Exhibitions</h1>
-            <div class="flex my-15 bg-grayAlt rounded-lg">
-                <div class="p-2 flex flex-row">
-                    <img class="w-120 h-90 object-cover rounded-lg" alt="Abstract Blue Painting" src="../images-folder/blue-watercolor-abstract1.jpg"/>
-                    <div class="pl-4"> 
-                        <h2 class="text-3xl">Ethereal Tides</h2>
-                        <p>January 15 &#x2D; March 20, 2026</p>
-                        <p>An immersive exploration of movement and fluidity. This series captures the intersection of organic chemistry and digital aesthetics, using high-viscosity pigments to mimic the natural pull of oceanic currents and glacial shifts.</p>
+        <div class="w-[95%] md:w-[70%] flex items-center flex-col px-4">
+            <h1 class="text-[28px] md:text-[2.5rem]">Current Exhibitions</h1>
+            <div class="flex my-8 md:my-15 bg-grayAlt rounded-lg">
+                <div class="p-2 flex flex-col md:flex-row">
+                    <img class="w-full md:w-120 h-60 md:h-90 object-cover rounded-lg" alt="Abstract Blue Painting" src="../images-folder/blue-watercolor-abstract1.jpg"/>
+                    <div class="pt-4 md:pt-0 md:pl-4 flex items-center flex-col justify-center px-2">
+                        <h2 class="text-2xl md:text-3xl pb-3">Ethereal Tides</h2>
+                        <p class="pb-3 text-lg md:text-xl">January 15 &#x2D; March 20, 2026</p>
+                        <p class="text-sm md:text-base text-center md:text-left">An immersive exploration of movement and fluidity. This series captures the intersection of organic chemistry and digital aesthetics, using high-viscosity pigments to mimic the natural pull of oceanic currents and glacial shifts.</p>
                     </div>
                 </div>
             </div>
@@ -52,26 +58,26 @@
     <!--end of CURRENT EXHIBITIONS-->
 
     <!--start of upcoming exhibitions-->
-    <div class="bg-grayAlt flex justify-center flex-col items-center">
-        <h2 class="text-center text-[56px]">Upcoming Exhibitions</h2>
-        <div class="w-full grid grid-cols-3 py-20 justify-items-center">
+    <div class="bg-grayAlt flex justify-center flex-col items-center py-8 md:py-0">
+        <h2 class="text-center text-[32px] md:text-[56px]">Upcoming Exhibitions</h2>
+        <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10 md:py-20 justify-items-center gap-6 px-4">
 
             <div class="card-tw">
-                <img class="img-tw" alt="" src="../images-folder/pexels-zaksheuskaya-709412-1546251.jpg"/>
+                <img class="img-tw" alt="Echoes of the Great Salt Lake watercolor artwork" src="../images-folder/pexels-zaksheuskaya-709412-1546251.jpg"/>
                 <h2 class="text-[16px]">Echoes of the Great Salt Lake</h2>
                 <p class="text-[16px] py-0.5">January 15 - March 30, 2026</p>
                 <p class="text-[16px]">Explore the natural beauty of Utah's iconic Great Salt Lake through contemporary watercolor and mixed media works.</p>
             </div>
 
             <div class="card-tw">
-                <img class="img-tw" alt="" src="../images-folder/pexels-sanmane-997365.jpg"/>
+                <img class="img-tw" alt="The Weight of Light long-exposure photography" src="../images-folder/pexels-sanmane-997365.jpg"/>
                 <h2 class="text-[16px]">The Weight of Light</h2>
                 <p class="text-[16px] py-0.5">February 7 - April 5, 2026</p>
                 <p class="text-[16px]">Experience the intersection of physics and art through vibrant, long-exposure light photography that captures the hidden energy of the spectrum.</p>
             </div>
 
             <div class="card-tw">
-                <img class="img-tw" alt="" src="../images-folder/The-Thaw.jpg"/>
+                <img class="img-tw" alt="The Thaw abstract monochromatic texture art" src="../images-folder/The-Thaw.jpg"/>
                 <h2 class="text-[16px]">The Thaw</h2>
                 <p class="text-[16px] py-0.5">March 4 - May 6, 2026</p>
                 <p class="text-[16px]">Witness the powerful transition of the seasons through abstract, monochromatic textures that evoke the raw beauty of melting ice and emerging earth.</p>
@@ -81,36 +87,58 @@
     </div>
     <!--end of upcoming exhibitions-->
 
-    <!--start of Footer-->
-
+    <!--start of footer-->
     <div class="bg-footer flex justify-center flex-col">
         <h1 class="text-footer-main-text text-center">SLC Art</h1>
         <p class="text-footer-main-text text-center">Showcasing contemporary art from local and regional artists in the heart of Salt Lake City.</p>
-        <div class="w-full grid grid-cols-4 ">
+        <div class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
 
             <div class="footer-card-tw">
                 <h2 class="text-[1.25rem] text-footer-main-text font-semibold">Useful Links</h2>
                 <ul class="text-footer-main-text pt-1.5 text-[15px]">
-                    <li><a href="../html-folder/landing-page.html">Home</a></li>
-                    <li><a href="../html-folder/exhibitions.html">Exhibitions</a></li>
-                    <li><a href="../html-folder/artists.html">Artist</a></li>
-                    <li><a href="../html-folder/visit-us.html">Visit Us</a></li>
+                    <li><a href="landing-page.html">Home</a></li>
+                    <li><a href="exhibitions.html">Exhibitions</a></li>
+                    <li><a href="artists.html">Artists</a></li>
+                    <li><a href="visit-us.html">Visit Us</a></li>
                 </ul>
             </div>
 
-            <div class="footer-card-tw">    
+            <div class="footer-card-tw">
                 <h2 class="text-[1.25rem] text-footer-main-text font-semibold">Location</h2>
                 <ul class="text-footer-main-text py-1.5 text-[15px]">
-                    <li>1452 S West Temple St Salt Lake City, UT 84115</li>
-                    <li>Salt Lake, Utah, 84115</li>
-                    <li><h2 class="text-[1.25rem] text-footer-main-text font-semibold text-center">Contact</h2></li>
+                    <li>1452 S West Temple St</li>
+                    <li>Salt Lake City, UT 84115</li>
+                    <li class="pt-2"><h2 class="text-[1.25rem] text-footer-main-text font-semibold">Contact</h2></li>
+                    <li>info@slcart.org</li>
                 </ul>
             </div>
-        </div>
-        
-    </div>
 
-    <!--end of Footer-->
+            <div class="footer-card-tw">
+                <h2 class="text-[1.25rem] text-footer-main-text font-semibold">Hours</h2>
+                <ul class="text-footer-main-text py-1.5 text-[15px]">
+                    <li>Tue - Fri: 10am - 6pm</li>
+                    <li>Sat: 10am - 8pm</li>
+                    <li>Sun: 12pm - 5pm</li>
+                    <li>Mon: Closed</li>
+                </ul>
+            </div>
+
+            <div class="footer-card-tw">
+                <h2 class="text-[1.25rem] text-footer-main-text font-semibold">Follow Us</h2>
+                <ul class="text-footer-main-text py-1.5 text-[15px]">
+                    <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="hover:text-buttons">Instagram</a></li>
+                    <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="hover:text-buttons">Facebook</a></li>
+                    <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="hover:text-buttons">Twitter</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="text-footer-main-text text-center text-[13px] py-4 border-t border-white/20 mt-4">
+            <p>&copy; 2026 SLC Art Gallery. All rights reserved.</p>
+            <p class="pt-1">Sources: <a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer" class="hover:text-buttons underline">Tailwind CSS</a> | <a href="https://pexels.com" target="_blank" rel="noopener noreferrer" class="hover:text-buttons underline">Pexels</a> | <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer" class="hover:text-buttons underline">Unsplash</a></p>
+        </div>
+    </div>
+    <!--end of footer-->
 
 </body>
 </html>
