@@ -189,15 +189,14 @@
     align-items: center;
 }
 .art-sample {
-    margin:25px;
     display: flex;
     width: 350px;
-    height: 430px;
+    height: auto;
+    min-height: 430px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding:10px;
-    /*   border: 1px solid #000000;  */
     border-radius: 8px;
     background-color: #fff;
 }
@@ -298,7 +297,6 @@ line-height: 1.4;
     background-color: #fff;
     border-radius: 8px;
     padding: 10px;
-    margin: 25px 75px;
 }
 .artist-bio {
     padding-top:5px;
